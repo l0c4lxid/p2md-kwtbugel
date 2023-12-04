@@ -43,6 +43,7 @@
                                 ?>
                                 <?= $formattedDate ?>
                             </td>
+
                             <td>
                                 <img src="<?= base_url('img/post/' . $value['foto_post']) ?>" alt="Post Image" width="100">
                             </td>
@@ -99,6 +100,13 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="isi_post">Isi Post</label>
+                        <div class="input-group">
+                            <textarea rows="5" type="text" class="form-control" id="isi_post" name="isi_post"
+                                required><?= $value['isi_post'] ?></textarea>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="exampleInputFile">Foto post</label>
                         <div class="input-group">

@@ -241,6 +241,7 @@ class Admin extends BaseController
             $judul_post = $this->request->getPost('judul_post');
             $pembuat_post = $this->request->getPost('pembuat_post');
             $tanggal_post = $this->request->getPost('tanggal_post');
+            $isi_post = $this->request->getPost('isi_post');
             $foto_post = $this->request->getFile('foto_post');
 
             // Process the image file (you may want to move it to a specific folder, resize, etc.)
@@ -263,6 +264,7 @@ class Admin extends BaseController
                 'judul_post' => $judul_post,
                 'pembuat_post' => $pembuat_post,
                 'tanggal_post' => $tanggal_post,
+                'isi_post' => $isi_post,
                 'foto_post' => $newFileName, // Save the generated filename
             ]);
 
@@ -285,6 +287,7 @@ class Admin extends BaseController
         $judul_post = $this->request->getPost('judul_post');
         $pembuat_post = $this->request->getPost('pembuat_post');
         $tanggal_post = $this->request->getPost('tanggal_post');
+        $isi_post = $this->request->getPost('isi_post');
 
         // Check if a new file has been uploaded
         $foto_post = $this->request->getFile('foto_post');
@@ -307,6 +310,7 @@ class Admin extends BaseController
                 'judul_post' => $judul_post,
                 'pembuat_post' => $pembuat_post,
                 'tanggal_post' => $tanggal_post,
+                'isi_post' => $isi_post,
                 'foto_post' => $newFileName
             ];
         } else {
@@ -315,6 +319,7 @@ class Admin extends BaseController
                 'judul_post' => $judul_post,
                 'pembuat_post' => $pembuat_post,
                 'tanggal_post' => $tanggal_post,
+                'isi_post' => $isi_post,
             ];
         }
 

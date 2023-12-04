@@ -45,4 +45,17 @@ class Home extends BaseController
         ];
         return view('v_blog', $data);
     }
+    public function blog_all($id_post): string
+    {
+        // Mengambil data post berdasarkan id_post
+        $post = $this->postModel->find($id_post);
+
+        $data = [
+            'judul' => 'Berita',
+            'post' => $post,
+        ];
+
+        return view('v_blog_all', $data);
+    }
+
 }

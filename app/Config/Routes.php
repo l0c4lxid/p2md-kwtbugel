@@ -9,6 +9,8 @@ $routes->get('/', 'Home::index');
 $routes->get('/home', 'Home::index');
 $routes->get('/blog', 'Home::blog');
 
+$routes->get('/blog/viewpost/(:num)', 'Home::blog_all/$1');
+
 $routes->get('/login', 'Auth::index');
 $routes->get('/admin', 'Auth::index');
 $routes->post('/ceklogin', 'Auth::CekLogin');

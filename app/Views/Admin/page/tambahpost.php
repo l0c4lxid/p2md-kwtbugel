@@ -27,6 +27,13 @@
                 </div>
             </div>
             <div class="form-group">
+                <label for="isi_post">Isi Post</label>
+                <div class="input-group">
+                    <textarea type="date" class="form-control" id="isi_post" name="isi_post"
+                        placeholder="Masukan Isi Post" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="exampleInputFile">Foto post</label>
                 <div class="input-group">
                     <div class="custom-file">
