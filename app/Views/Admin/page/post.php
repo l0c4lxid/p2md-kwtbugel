@@ -38,7 +38,10 @@
                                 <?= $value['pembuat_post'] ?>
                             </td>
                             <td>
-                                <?= $value['tanggal_post'] ?>
+                                <?php
+                                $formattedDate = date('Y-m-d', strtotime($value['tanggal_post']));
+                                ?>
+                                <?= $formattedDate ?>
                             </td>
                             <td>
                                 <img src="<?= base_url('img/post/' . $value['foto_post']) ?>" alt="Post Image" width="100">

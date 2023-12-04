@@ -225,7 +225,7 @@ class Admin extends BaseController
             'judul_post' => 'required|is_unique[tbl_post.judul_post]', // Check if the Post name is unique
             'pembuat_post' => 'required',
             'tanggal_post' => 'required',
-            'foto_post' => 'uploaded[foto_post]|mime_in[foto_post,image/jpg,image/jpeg,image/png,image/gif]',
+            'foto_post' => 'uploaded[foto_post]|mime_in[foto_post,image/jpg,image/jpeg,image/png,image/gif,image/webp]',
         ]);
 
 

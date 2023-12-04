@@ -34,7 +34,8 @@ class Home extends BaseController
     }
     public function blog(): string
     {
-        $post = $this->postModel->findAll();
+        $post = $this->postModel->orderBy('tanggal_post', 'DESC')->findAll();
+
         $profile = $this->profileModel->findAll();
 
         $data = [

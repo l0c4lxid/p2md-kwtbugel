@@ -150,7 +150,6 @@
                             // Convert the date to the desired format with Indonesian month name
                             $tanggal_post_formatted = strftime('%d %B %Y', strtotime($value['tanggal_post']));
                             ?>
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <small class="me-3"><i class="fa fa-user text-primary me-2"></i>
